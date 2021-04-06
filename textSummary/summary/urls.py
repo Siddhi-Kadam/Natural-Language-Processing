@@ -19,4 +19,6 @@ from summary import views
 
 urlpatterns = [
     path('', views.homePage, name='Home Page'),
+    path('summarize', views.summarize, name='Answer Page'),
+    path('audio', views.audio, name='Audio')
 ]

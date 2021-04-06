@@ -5,11 +5,11 @@
 <body>
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" >
+			<form class="contact100-form validate-form" method="POST" action="summarize">
+				{% csrf_token %}
 				<span class="contact100-form-title">
-					Text Summarization
+					Text Summarizer
 				</span>
-
 				<div class="wrap-input100 input100-select bg1">
 					<table>
 						<tr>
