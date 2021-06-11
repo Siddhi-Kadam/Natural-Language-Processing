@@ -23,11 +23,20 @@
 				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Text to Summarize">
 					<table>
 						<tr>
-							<td><span class="label-input100">Final Summary</span></td>
+							<td><span class="label-input100">Final Summary (using English Corpus)</span></td>
 							<td><h6 style="color:red">*</h6></td>
 						</tr>
 					</table>
-					<textarea class="input100" name="final" readonly>{{ final }}</textarea>
+					<textarea class="input100" name="english" readonly>{{ english }}</textarea>
+				</div>
+				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Text to Summarize">
+					<table>
+						<tr>
+							<td><span class="label-input100">Final Summary (using Marathi Corpus)</span></td>
+							<td><h6 style="color:red">*</h6></td>
+						</tr>
+					</table>
+					<textarea class="input100" name="marathi" readonly>{{ marathi }}</textarea>
 				</div>
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
@@ -36,25 +45,6 @@
 							<i class="fa fa-file-audio-o m-l-7" aria-hidden="true"></i>
 						</span>
 					</button>
-				</div>
-				<div class="container-contact100-form-btn"></div>
-				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Text to Summarize">
-					<table>
-						<tr>
-							<td><span class="label-input100">Original Summary (English)</span></td>
-							<td><h6 style="color:red">*</h6></td>
-						</tr>
-					</table>
-					<textarea class="input100" name="originalE" readonly>{{ text }}</textarea>
-				</div>
-				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Text to Summarize">
-					<table>
-						<tr>
-							<td><span class="label-input100">Final Summary (English)</span></td>
-							<td><h6 style="color:red">*</h6></td>
-						</tr>
-					</table>
-					<textarea class="input100" name="finalE" readonly>{{ summary }}</textarea>
 				</div>
 			</form>
 		</div>
